@@ -1,0 +1,25 @@
+#furniture-explorer {
+  position: relative;
+  aspect-ratio: 20/9;
+  margin: 1.25rem clamp(1rem, -0.1429rem + 5.7143vw, 5rem);
+}
+.loading-explorer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  scale: 2;
+  animation-name: spin;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
